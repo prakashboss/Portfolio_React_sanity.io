@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Posts() {
+function Porjects() {
   return (
     <div>
-      posts page
+      project page
     </div>
   )
 }
 
-export default Posts
+export default Porjects
