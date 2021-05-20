@@ -5,6 +5,30 @@
 body {
   width: 100%;
   height: 100%;
+  
+}
+.experiencePage{
+  background-image: url(./asserts/images/workexpPageBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.productsPage{
+  background-image: url(./asserts/images/projectsBackkground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.aboutMe{
+  background-image: url(./asserts/images/projectsBackkground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 .cursive {
@@ -30,11 +54,10 @@ body {
   }
 }
 
-.backgroundImg {
+.homePage {
   background-image: url("./asserts/images/MainBackground.jpg");
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: aqua;
+  height: 100%;
 }

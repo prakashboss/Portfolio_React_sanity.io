@@ -6,16 +6,15 @@ import styled from "styled-components";
 const NavBarWrapper = styled.header`
   background-color: black;
   width: 100%;
+
   div {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     nav {
       display: flex;
       justify-content: space-around;
       width: 75%;
-      ${'' /* // className="inline-flex items-center 
-      py-6 px-3 mr-4 text-red-600 hover:text-red-300 text-4xl
-       font-bold cursive tracking-Widest" */}
       a {
         display: inline-block;
         color: red;
@@ -24,57 +23,60 @@ const NavBarWrapper = styled.header`
         margin-left: 3px;
         font-weight: bold;
 
-        @media (max-width: 450px) {
-          font-size: 16px;
+        @media (max-width: 565px) {
+          font-size: 18px;
           padding: 6% 2%;
         }
+        @media (max-width: 390px) {
+          font-size: 15px;
+          padding: 2% 2%;
+        }
+        @media (max-width: 350px) {
+          font-size: 12px;
+          padding: 2% 2%;
+        }
         &: hover {
-        color: #FB9631;
+          color: #fb9631;
+        }
       }
-      }
-     
+
       .active {
-          color: white;
+        color: #cbd5e0;
       }
-      
     }
   }
 `;
-
-
 
 function NavBar() {
   return (
     <NavBarWrapper>
       <div>
-        <nav
-        // className="flex justify-between bg-black"
-        >
-          <NavLink
-            to="/"
-            exact
-            
-            ClassName="navLink cursive"
-            
-          >
+        <nav>
+          <NavLink to="/" exact className="cursive">
             Home
           </NavLink>
-          <NavLink to="/posts">Posts</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/about">About Me</NavLink>
+          <NavLink className="cursive" to="/projects">
+            Projects
+          </NavLink>
+          <NavLink className="cursive" to="/experience">
+            Experience
+          </NavLink>
+          <NavLink className="cursive" to="/contact">
+            Contact Me
+          </NavLink>
         </nav>
         <div>
           <SocialIcon
             url="https://github.com/prakashboss"
-           
             target="_blank"
             style={{
-              height: 45,
-              width: 45,
+              height: "7vw",
+              width: "7vw",
+              minHeight: 40,
+              minWidth: 40,
               borderRadius: 60,
               background: "black",
-              margin: '5px',
-              marginTop: '3vw'
+              margin: "5px",
             }}
             fgColor="#fff"
           />

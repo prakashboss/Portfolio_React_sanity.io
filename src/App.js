@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Switch} from 'react-router-dom'
 import Home from './pages/Home'
-import About from './pages/AboutMe'
-import Posts from './pages/Posts'
-import SinglePost from './pages/SinglePost'
 import Projects from './pages/Projects'
+import SingleProject from './pages/SingleProject'
+import Experience from './pages/Experience'
 import NavBar from './pages/NavBar'
+import ContactMe from './pages/ContactMe'
 
 function App() {
   return (
@@ -12,10 +12,10 @@ function App() {
     <NavBar />
      <Switch>
       <Route component={Home} path="/" exact/>
-      <Route component={About} path="/about" />
-      <Route component={SinglePost} path="/post/:slug" />
-      <Route component={Posts} path="/posts" />
+      <Route component={ContactMe} path="/contact" />
+      <Route component={SingleProject} path="/project/:slug" />
       <Route component={Projects} path="/projects" />
+      <Route component={Experience} path="/experience" />
      </Switch>
    </BrowserRouter>
   );
